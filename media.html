@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>media</title>
-    <script src="https://cdn.bootcdn.net/ajax/libs/js-cookie/latest/js.cookie.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
     <button>跳转到软文页</a>
         <script type="text/javascript">
-            $('button').click(function () {
+            document.querySelector('button').onclick= function () {
                 var img = new Image();
                 img.src = 'https://api.mediago.io/cm_mapping/write.do';
                 setTimeout(function () {
                     location.href = 'http://htmlpreview.github.io/?https://github.com/cuihua111/cktest/blob/main/softpage.html'
                 },2000)
-            })
+            }
         </script>
 </body>
 
