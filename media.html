@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <button id="with" style="color:red">跳转到软文页 带p3p</button>
+    <button id="with" style="color:red">跳转到软文页 带p3p samesite</button>
     <button id="no" style="color:green">跳转到软文页 不带p3p</button>
         <script type="text/javascript">
             document.querySelector('#no').onclick= function () {
@@ -22,7 +22,7 @@
             
             document.querySelector('#with').onclick= function () {
                 var img = new Image();
-                img.src = 'https://api.mediago.io/cm_mapping/write.do?p3p=111'
+                img.src = 'https://api.mediago.io/cm_mapping/write.do?p3p=111&samesite=111'
                 setTimeout(function () {
                     location.href = 'http://htmlpreview.github.io/?https://github.com/cuihua111/cktest/blob/main/softpage.html'
                 },5000)
